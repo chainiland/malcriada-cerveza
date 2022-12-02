@@ -1,6 +1,6 @@
 html{
   scroll-behavior: smooth;
-  background-color: #f3d2c1;
+  background-image: url(img/fondo.jpg);
 }
 *{
     font-family: 'Advent Pro', sans-serif;
@@ -30,6 +30,76 @@ html{
   z-index: 1;
   }
 
+  /*hero*/
+  .Bienvenides{
+    background-size: 60%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Bienvenides h1{
+    color: #f582ae;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .Bienvenides p{
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 15px;
+  color: #232946;
+  font-weight: 400;
+  }
+
+
+  .boton1{
+    color: #f3d2c1;
+    width: 200px;
+    height: 40px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 700;
+    background-color: #6246ea;
+    display: block;
+    border-radius: 5px;
+    margin-top: 30px;
+    text-decoration: none;
+  }
+
+  /*FIN hero*/
+
+  /*slider*/
+  .galeria{
+    overflow: hidden;
+  }
+
+  #myCarousel{
+  color: #0000;
+  --carousel-button-bg: #fff;
+  --carousel-button-svg-stroke-width: 2;
+}
+
+.carousel__slide {
+  display: flex;
+  justify-content: center;
+  width: 1350px;
+  max-height: 500px;
+}
+
+.carousel img{
+  object-fit: contain;
+  background-position: 50% 50%;
+}
+/*fin slider*/
+
+/*barra*/
   .malcriada{
     flex: 1;
     display:flex;
@@ -69,9 +139,10 @@ color: #f1f1f1;
 .lista li a:hover{
   color: #6246ea;
 }
+/*FIN barra*/
 
 /*main section*/
-.main{
+.main{  
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -101,80 +172,234 @@ color: #f1f1f1;
   color: #232946;
   text-align: right;
 }
+/* FIN main section*/
 
-/*productos section*/
-.productos{
-  height: 600px;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 1300px;
-  margin: 2rem;
-  padding-left: 600px;
+/*marcas section*/
+.contenedor{
+  margin-top: 30px;
+  margin-bottom: -150px;
 }
-.productos h2{
-  font-size: 60px;
-  font-weight: bolder;
+
+h2{
   color: #6246ea;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 40px;
 }
-.productos img{
-  width: 860px;
+
+.marcas article{
+  width: 505px;
+  height: 550px;
+  padding: 100px;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  background-color: #f582ae;
+  border-radius: 30px;
+  border-radius: 19px;
+  box-shadow: 1px 2px 5px #212121;
+}
+
+h3{
+  font-weight: 400;
+  color: #f1f1f1;
+  font-size: 40px;
+  align-items: center;
+}
+
+.marcas .card{
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.productos h2{
-  position: absolute;
-  text-align: center;
-  justify-content: center;
-  padding-left: 150px;
+  flex-direction: column;
 }
 
-.opciones{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-}
-
-.opciones li a{
-  display: block;
-  width: 130px;
+.marcas a{
+  color: #f3d2c1;
+  width: 150px;
   height: 30px;
-  border-radius: 5px;
-  color: #232946;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   line-height: 30px;
+  font-weight: 600;
+  background-color: #6246ea;
+  display: block;
+  border-radius: 30px;
+  margin-top: 20px;
   text-decoration: none;
- 
 }
-.opciones li p{
-  margin-top: 10px;
+
+.marcas{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.marcas img{
+  width: 290px;
+  height: auto;
+  margin-top: -45px;
+}
+
+.marcas p{
+  font-size: 20px;
+  font-weight: medium;
+  color: #f1f1f1;
+}
+/* FIN marcas section*/
+
+/*galeria*/
+#portfolio h2{
+  text-align: center;
+  font-size: 90px;
+  font-weight: bold;
+  color: #6246ea;
+  padding-top: 15%;
+}
+
+#portfolio article{
+  display: flex;
+  flex-direction: row;
+  max-width: 1500px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-top: 0%;
+  padding-left: 30%;
+}
+
+#portfolio img{
+  margin: 19px;
+}
+
+#portfolio article a img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*FIN galeria*/
+
+/*combos*/
+.contenedor{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+h2{
+  color: #6246ea;
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.combos article{
+  width: 505px;
+  height: 550px;
+  padding: 100px;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  background-color: #f582ae;
+  border-radius: 30px;
+  border-radius: 19px;
+  box-shadow: 1px 2px 5px #212121;
+}
+
+h3{
+  font-weight: 400;
+  color: #f1f1f1;
+  font-size: 40px;
+  align-items: center;
+}
+.combos .card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.combos a{
+  color: #f3d2c1;
+  width: 150px;
+  height: 30px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  background-color: #6246ea;
+  display: block;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.combos{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: auto;
+}
+
+.combos img{
+  width: 350px;
+  height: auto;
+  margin-top: -45px;
+}
+
+.combos p{
+  font-size: 50px;
+  font-weight: medium;
+  color: #f1f1f1;
+}
+/*FIN combos*/
+
+/*formulario*/
+.cardcontacto{
+  width: 2700px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+#contactar{
+  background-color: #f582ae;
+  width: 1350px;
+  height: 650px;
+  border-radius: 19px;
+  box-shadow: 1px 2px 5px #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  border: 3px;
+margin: auto;
+}
+h1{
+  color:#ffffff;
+  font-size: 50px;
+}
+.label{
+  display: block;
   margin-bottom: 10px;
 }
 
-.button{
-  background-color: #6246ea;
-  font-size: 30px;
-  width: 140px;
-  height: 50px;
-  border-width: 1px;
-  color: #232946;
-  border-style: solid;
-  border-color: #f582ae;
-  background-color:transparent;
-  font-weight: bold;
+.espacio{
+  margin: 16px 0;
 }
 
-
-.button:hover{
-  background-color: #6246ea;
-  color: #f1f1f1;
+#nombre-y-apellido, #e-mail{
+  padding: 10px;
 }
+
+#consulta-mensaje{
+  padding: 10px;
+}
+
+#nombre-y-apellido, #e-mail, #consulta-mensaje{
+  display: block;
+  width: 45%;
+  border-radius: 5px;
+  border: none;
+}
+/*FIN formulario*/
 
 /*footer*/
 
@@ -204,7 +429,6 @@ footer img{
 
 .derecha{
   float: right;
-
 }
-
+/*FIN footer*/
 
