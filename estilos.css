@@ -9,6 +9,13 @@ html{
     padding: 0%;
     box-sizing: border-box;
 }
+
+body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .linea{
   display: flex;
   align-items: center;
@@ -17,24 +24,81 @@ html{
   color: #f582ae;
 }
 
-.container {
+.contenedores{
+  width: 1100px;
+  padding: 20px;
+  margin: 150px auto;
+
+}
+
+.barra{
+  width: 1100px;
   display: flex;
-  background-color: #f582ae;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  padding: 1rem 1.5rem;
+  justify-content: space-between;
+}
+
+#barra {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f582ae;
   box-shadow: 2px 3px 2px #f1f1f1;
-  position: sticky;
+  position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1;
+  z-index: 1000;
   }
+
+/*barra*/
+
+#malcriada{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+
+.navegador{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+}
+
+.lista{
+display: flex;
+list-style: none;
+}
+
+.nav-item{
+margin-left: 2rem;
+}
+
+.nav-link{
+font-weight: 600;
+}
+
+.lista li a{
+font-size: 20px;
+padding-right: 40px;
+text-decoration: none;
+color: #f1f1f1;
+}
+
+.lista li a:hover{
+color: #6246ea;
+}
+
+/*FIN barra*/
 
   /*hero*/
   .Bienvenides{
     background-size: 60%;
-    padding-top: 50px;
-    padding-bottom: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -57,26 +121,11 @@ html{
   font-weight: 400;
   }
 
-
-  .boton1{
-    color: #f3d2c1;
-    width: 200px;
-    height: 40px;
-    font-size: 19px;
-    text-align: center;
-    line-height: 40px;
-    font-weight: 700;
-    background-color: #6246ea;
-    display: block;
-    border-radius: 5px;
-    margin-top: 30px;
-    text-decoration: none;
-  }
-
   /*FIN hero*/
 
   /*slider*/
   .galeria{
+    width: 1100px;
     overflow: hidden;
   }
 
@@ -99,55 +148,14 @@ html{
 }
 /*fin slider*/
 
-/*barra*/
-  .malcriada{
-    flex: 1;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:flex-start;
-    padding-left: 150px;
-  }
-  .texlogo{
-    float: right;
-    padding-top: 23px;
-    font-size: 35px;
-    font-weight: bold;
-    color: #f1f1f1;
-  }
-  .navegador{
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-.lista{
-  display: flex;
-  list-style: none;
-}
-.nav-item{
-  margin-left: 2rem;
-}
-.nav-link{
-  font-weight: 600;
-}
-.lista li a{
-  font-size: 20px;
-padding-right: 40px;
-text-decoration: none;
-color: #f1f1f1;
-}
-.lista li a:hover{
-  color: #6246ea;
-}
-/*FIN barra*/
 
 /*main section*/
-.main{  
+
+#main{  
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.9rem;
-  max-width: 1100px;
   margin: 2rem auto 6rem;
   align-items: left;
 }
@@ -175,28 +183,21 @@ color: #f1f1f1;
 /* FIN main section*/
 
 /*marcas section*/
-.contenedor{
-  margin-top: 30px;
-  margin-bottom: -150px;
-}
 
 h2{
   color: #6246ea;
   font-size: 70px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .marcas article{
-  width: 505px;
-  height: 550px;
-  padding: 100px;
-  justify-content: center;
+  width: 350px;
+  padding: 20px;
+  margin: 10px;
   flex-direction: row;
   text-align: center;
   background-color: #f582ae;
   border-radius: 30px;
-  border-radius: 19px;
   box-shadow: 1px 2px 5px #212121;
 }
 
@@ -211,9 +212,10 @@ h3{
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.marcas a{
+.boton{
   color: #f3d2c1;
   width: 150px;
   height: 30px;
@@ -222,6 +224,22 @@ h3{
   line-height: 30px;
   font-weight: 600;
   background-color: #6246ea;
+  display: block;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.boton:hover{
+  color: #f3d2c1;
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  background-color: #4120e6;
   display: block;
   border-radius: 30px;
   margin-top: 20px;
@@ -238,7 +256,7 @@ h3{
 .marcas img{
   width: 290px;
   height: auto;
-  margin-top: -45px;
+  border-radius: 20px;
 }
 
 .marcas p{
@@ -249,12 +267,18 @@ h3{
 /* FIN marcas section*/
 
 /*galeria*/
+
+.porfolio{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 #portfolio h2{
   text-align: center;
   font-size: 90px;
   font-weight: bold;
   color: #6246ea;
-  padding-top: 15%;
 }
 
 #portfolio article{
@@ -262,14 +286,14 @@ h3{
   flex-direction: row;
   max-width: 1500px;
   flex-wrap: wrap;
-  align-content: center;
   align-items: center;
-  padding-top: 0%;
-  padding-left: 30%;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 #portfolio img{
   margin: 19px;
+  border-radius: 20px;
 }
 
 #portfolio article a img{
@@ -280,22 +304,16 @@ h3{
 /*FIN galeria*/
 
 /*combos*/
-.contenedor{
-  margin-top: 30px;
-  margin-bottom: 60px;
-}
 
 h2{
   color: #6246ea;
   font-size: 70px;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 .combos article{
-  width: 505px;
-  height: 550px;
-  padding: 100px;
+  width: 340px;
+  padding: 20px;
   justify-content: center;
   flex-direction: row;
   text-align: center;
@@ -330,6 +348,22 @@ h3{
   border-radius: 30px;
   margin-top: 20px;
   text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.combos a:hover{
+  color: #f3d2c1;
+  width: 150px;
+  height: 30px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  background-color: #411fe9;
+  display: block;
+  border-radius: 30px;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
 .combos{
@@ -340,9 +374,9 @@ h3{
 }
 
 .combos img{
-  width: 350px;
+  width: 300px;
   height: auto;
-  margin-top: -45px;
+  border-radius: 20px;
 }
 
 .combos p{
@@ -354,23 +388,19 @@ h3{
 
 /*formulario*/
 .cardcontacto{
-  width: 2700px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 50px;
 }
 
 #contactar{
   background-color: #f582ae;
-  width: 1350px;
-  height: 650px;
   border-radius: 19px;
   box-shadow: 1px 2px 5px #212121;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
   border: 3px;
-margin: auto;
+  margin: auto;
 }
 h1{
   color:#ffffff;
@@ -385,6 +415,18 @@ h1{
   margin: 16px 0;
 }
 
+.centrarbotones{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  margin: 20px;
+}
+
+
 #nombre-y-apellido, #e-mail{
   padding: 10px;
 }
@@ -395,7 +437,7 @@ h1{
 
 #nombre-y-apellido, #e-mail, #consulta-mensaje{
   display: block;
-  width: 45%;
+  width: 600px;
   border-radius: 5px;
   border: none;
 }
@@ -423,7 +465,6 @@ footer ul{
 footer img{
   width: 25px;
   height: 25px;
-  
   gap: 1.5rem;
 }
 
@@ -431,4 +472,3 @@ footer img{
   float: right;
 }
 /*FIN footer*/
-
