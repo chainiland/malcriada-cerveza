@@ -18,35 +18,44 @@
   </head>
 
   <body>
-    <header class="container">
-      <div class="malcriada">
-        <div class="logo">
-          <img src="img/Logo.png" alt="logomalcriada" />
-          <h2 class="texlogo">MALCRIADA</h2>
+
+<!-- barra de navegacion -->
+    <nav id="barra">
+      <div class="barra">
+        <div id="malcriada">
+          <div class="logo">
+            <img src="img/Logo.png" alt="logomalcriada"/>
+          </div>
+        </div>
+        <div class="navegador">
+            <ul class="lista">
+              <li><a href="#">INICIO</a></li>
+              <li><a href="#main">SOBRE NOSOTROS</a></li>
+              <li><a href="#productos">PRODUCTOS</a></li>
+              <li><a href="#contacto">LOCALES</a></li>
+              <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
         </div>
       </div>
-      <div class="navegador">
-        <nav>
-          <ul class="lista">
-            <li><a href="#">INICIO</a></li>
-            <li><a href="#main">SOBRE NOSOTROS</a></li>
-            <li><a href="#productos">PRODUCTOS</a></li>
-            <li><a href="#contacto">LOCALES</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    </nav>
 
-  <article>
+<!-- fin barra de navegacion -->
+
+<!-- Hero -->
+
+  <header class="contenedores">
     <div class="Bienvenides">
       <h1>MALCRIADA</h1>
       <p>Te presentamos una posión diferente</p>
       <p>Una formula especial de cervecería frutal</p>
       <p>A disfrutar!</p>
-      <a class="boton1" href="#productos">VER PRODUCTOS</a>
+      <a class="boton" href="#productos">VER PRODUCTOS</a>
     </div>
-  </article>
+  </header>
+
+<!-- fin Hero -->
+
+<!-- Slider -->
 
     <figure class="galeria">
       <div id="myCarousel" class="carousel">
@@ -68,7 +77,9 @@
       </div>
   </figure>
 
-    <section class="main" id="main">
+<!-- fin Slider -->
+
+    <section class="contenedores" id="main">
       <div class="info">
         <p class="logo"><img src="img/Birras.png" alt="Birras" /></p>
       </div>
@@ -86,32 +97,38 @@
       </div>
     </section>
 
-  <section class="contenedor" id="marcas contenedor">
+  <section class="contenedores" id="marcascontenedor">
     <h2>NUESTRAS POSIONES</h2>
     <div class="marcas">
       <article id="MALCRIADA" class="card">
-        <img src="img/galeria/minis/ceresita.jpg" alt="MALCRIADA">
-        <h3>MALCRIADA</h3>
-        <p>Contamos con diferentes sabores que generan lo que nosotros
-          llamamos diferentes pociones como ciruelas, palta, sandía, limón,
-          etc</p>
-          <a class="boton2" href="#">Ver información</a>
+        <div>
+          <img src="img/galeria/minis/ceresita.jpg" alt="MALCRIADA">
+          <h3>MALCRIADA</h3>
+          <p>Contamos con diferentes sabores que generan lo que nosotros
+            llamamos diferentes pociones como ciruelas, palta, sandía, limón,
+            etc</p>
+        </div>
+          <a class="boton" href="#">Ver información</a>
       </article>
       <article id="CALIMOCHO" class="card">
-        <img src="img/galeria/minis/climochito.jpg" alt="CALIMOCHO">
-        <h3>CALIMOCHO</h3>
-        <p>¿Te gusta el vino y la cerveza? te presentamos a CALIMOCHO, es la
-          primera submarca creada por la empresa la cual junta la hermandad
-          de la vid y la malta.</p>
-          <a class="boton3" href="#">Ver información</a>
+        <div>
+          <img src="img/galeria/minis/climochito.jpg" alt="CALIMOCHO">
+          <h3>CALIMOCHO</h3>
+          <p>¿Te gusta el vino y la cerveza? te presentamos a CALIMOCHO, es la
+            primera submarca creada por la empresa la cual junta la hermandad
+            de la vid y la malta.</p>
+        </div>
+          <a class="boton" href="#">Ver información</a>
       </article>
       <article id="SNAKEBITE" class="card">
-        <img src="img/galeria/minis/snakemini.jpg" alt="SNAKEBITE">
-        <h3>SNAKEBITE</h3>
-        <p>¿Estas de festejo? ¡Nosotros también! Te presentamos a SNAKEBITE
-          nuestra segunda submarca, la cual es un cóctel creado con
-          proporciones iguales de cerveza y sidra.</p>
-          <a class="boton4" href="#">Ver información</a>
+        <div>
+          <img src="img/galeria/minis/snakemini.jpg" alt="SNAKEBITE">
+          <h3>SNAKEBITE</h3>
+          <p>¿Estas de festejo? ¡Nosotros también! Te presentamos a SNAKEBITE
+            nuestra segunda submarca, la cual es un cóctel creado con
+            proporciones iguales de cerveza y sidra.</p>
+        </div>
+          <a class="boton" href="#">Ver información</a>
       </article>
     </div>
   </section>
@@ -119,8 +136,6 @@
     <section id="portfolio" class="porfolio">
       <h2>NUESTROS PRODUCTOS</h2> 
       <article>
-        <a href="https://lipsum.app/id/1/1024x768" >
-        </a>
               <a data-fancybox="cuadros" data-caption="Sabor Cereza" href="img/galeria/grandes/LataMalcriada.jpg" title="Sabor Cereza">
                 <img src="img/galeria/minis/ceresita.jpg" alt="Lata-Malcriada">
               </a>
@@ -142,7 +157,7 @@
       </article>
     </section>
 
-    <section class="contenedor" id="marcas contenedor">
+    <section class="contenedores" id="marcas contenedor">
       <h2>COMBOS!</h2>
       <div class="combos">
         <article id="MALCRIADA" class="card">
@@ -151,21 +166,21 @@
           <p>Llevas 6x5
             PROMO $1300
           </p>
-            <a class="boton2" href="#">COMPRAR</a>
+            <a href="#">COMPRAR</a>
         </article>
         <article id="CALIMOCHO" class="card">
           <img src="img/packcalimocho.jpg" alt="CALIMOCHO">
           <h3>CALIMOCHO</h3>
           <p>Llevas 6x5
             PROMO $1300</p>
-            <a class="boton3" href="#">COMPRAR</a>
+            <a href="#">COMPRAR</a>
         </article>
         <article id="SNAKEBITE" class="card">
           <img src="img/packsnakebite.jpg" alt="SNAKEBITE">
           <h3>SNAKEBITE</h3>
           <p>Llevas 6x5
             PROMO $1300</p>
-            <a class="boton4" href="#">COMPRAR</a>
+            <a href="#">COMPRAR</a>
         </article>
       </div>
     </section>
@@ -193,9 +208,9 @@
               </div>
               <!---fin deja tu comentario -->
               <!---boton envio -->
-              <div class="espacio">
-                  <button type="submit">Enviar consulta</button>
-                  <button type="reset">Borrar</button>
+              <div class="centrarbotones">
+                  <button type="submit" class="boton">Enviar consulta</button>
+                  <button type="reset" class="boton">Borrar</button>
               </div>
               <!---fin boton envio -->
           </form>
